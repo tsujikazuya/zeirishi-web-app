@@ -1,0 +1,84 @@
+.mix-banner {
+    background-color: var(--color-bg-subtle);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.mix-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.mix-link:hover {
+    text-decoration: underline;
+}
+
+.tabs-header {
+    display: flex;
+    gap: var(--space-2);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.tab-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-4);
+    border-bottom: 2px solid transparent;
+    color: var(--color-text-muted);
+    font-weight: 500;
+    transition: all var(--transition-fast);
+}
+
+.tab-btn:hover {
+    color: var(--color-text-main);
+    background-color: var(--color-bg-subtle);
+}
+
+.tab-btn.active {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+}
+
+.detail-list {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: var(--space-2);
+    font-size: 0.875rem;
+}
+
+.detail-list dt {
+    color: var(--color-text-muted);
+}
+
+.detail-list dd {
+    font-weight: 500;
+}
+
+.risk-badge {
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.risk-high {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.risk-med {
+    background-color: #fef9c3;
+    color: #854d0e;
+}
+
+.risk-low {
+    background-color: #dcfce7;
+    color: #166534;
+}
